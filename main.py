@@ -17,6 +17,12 @@ st.title("💡 Eurus: Security Grant Initiative")
 st.write("Ask any question about government grants for security agencies in Singapore.")
 st.write("👉 Tip: Type **'List of grants for security agencies'** to see all relevant grants.")
 
+from helper_functions.vectorstore import refresh_vectorstore, urls_to_scrape, embedding
+if not os.path.exists(persist_directory) or not os.listdir(persist_directory):
+    st.info("Vectorstore missing, rebuilding vectorstore...")
+    refresh_vectorstore(urls_to_scrape, embedding)
+    st.success("Vectorstore rebuilt successfully.")
+
 # Input field
 query = st.text_input("Enter your question")
 
