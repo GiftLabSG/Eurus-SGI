@@ -1,5 +1,7 @@
 from dotenv import load_dotenv
 import streamlit as st
+from helper_functions.utility import check_password  
+from helper_functions.qa_chain import get_final_response
 
 # Load environment variables
 load_dotenv()
@@ -10,13 +12,9 @@ st.title("💡 Eurus: Security Grant Initiative")
 st.write("Ask any question about government grants for security agencies in Singapore.")
 st.write("👉 Tip: Type **'List of grants for security agencies'** to see all relevant grants.")
 
-from helper_functions.utility import check_password  
-
 # Check if the password is correct.  
 if not check_password():
     st.stop()
-
-from helper_functions.qa_chain import get_final_response
 
 # Input field
 query = st.text_input("Enter your question")
