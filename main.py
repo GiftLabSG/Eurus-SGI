@@ -10,6 +10,7 @@ if not check_password():
     st.stop()
 
 from helper_functions.qa_chain import get_final_response
+from helper_functions.vectorstore import persist_directory
 
 # Streamlit page config
 st.set_page_config(page_title="Eurus: Security Grant Initiative", page_icon="💡")
