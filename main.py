@@ -1,10 +1,11 @@
-import streamlit as st
 from dotenv import load_dotenv
-from helper_functions.qa_chain import get_final_response
-from helper_functions.utility import check_password  
 
 # Load environment variables
 load_dotenv()
+
+import streamlit as st
+from helper_functions.qa_chain import get_final_response
+from helper_functions.utility import check_password  
 
 # Streamlit page config
 st.set_page_config(page_title="Eurus: Security Grant Initiative", page_icon="💡")
