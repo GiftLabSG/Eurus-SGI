@@ -14,4 +14,3 @@ crewai
 streamlit
 pydantic
 pydantic-core
-chromadb
