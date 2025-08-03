@@ -1,18 +1,27 @@
-langchain
-langchain-community
+streamlit==1.26.0
+
+# LangChain core with specific version
 langchain==0.3.26
-langchain-chroma>=0.0.1
-langchain-openai>=0.0.1
-openai
-chromadb
-tiktoken
-beautifulsoup4
-requests
-schedule
-python-dotenv
-crewai
-streamlit
+
+# LangChain community and OpenAI integration with compatible versions
+langchain-community==0.0.142
+langchain-chroma==0.0.4
+langchain-openai==0.0.17
+
+# Chroma vector database
+chromadb==0.3.21
+
+# OpenAI Python client
+openai==0.27.8
+
+# Utilities
+beautifulsoup4==4.12.2
+requests==2.31.0
+schedule==1.2.0
+python-dotenv==1.0.0
+tiktoken==0.4.0
+crewai==0.0.20
+
+# Pydantic with matching core version to avoid conflicts
 pydantic==2.11.7
 pydantic-core==2.33.2
-langchain-chroma>=0.0.1
-chromadb>=0.3.21
