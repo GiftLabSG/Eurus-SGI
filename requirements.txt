@@ -1,10 +1,10 @@
 langchain
 langchain-community
 langchain
-langchain-chroma
+langchain-chroma==0.2.5
 langchain-openai
 openai
-chromadb
+chromadb==1.0.15
 tiktoken
 beautifulsoup4
 requests
