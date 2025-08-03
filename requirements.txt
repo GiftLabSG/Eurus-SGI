@@ -11,3 +11,5 @@ schedule
 python-dotenv
 crewai
 streamlit
+pydantic==2.11.7
+pydantic-core==2.33.2
