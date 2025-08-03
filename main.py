@@ -16,8 +16,6 @@ st.set_page_config(page_title="Eurus: Security Grant Initiative", page_icon="�
 st.title("💡 Eurus: Security Grant Initiative")
 st.write("Ask any question about government grants for security agencies in Singapore.")
 st.write("👉 Tip: Type **'List of grants for security agencies'** to see all relevant grants.")
-st.write("Vectorstore exists:", os.path.exists(persist_directory))
-st.write("Files:", os.listdir(persist_directory) if os.path.exists(persist_directory) else "Directory missing")
 
 # Input field
 query = st.text_input("Enter your question")
