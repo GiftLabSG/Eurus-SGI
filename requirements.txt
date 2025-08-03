@@ -14,4 +14,4 @@ crewai
 streamlit
 pydantic
 pydantic-core
-chromadb
+chromadb==0.3.22
