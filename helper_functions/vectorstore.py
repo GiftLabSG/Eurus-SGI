@@ -11,7 +11,12 @@ from helper_functions.web_scraper import scrape_and_clean
 # Load environment variables
 load_dotenv()
 
-embedding = OpenAIEmbeddings(openai_api_key=os.getenv("OPENAI_API_KEY"))
+def get_embedding():
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise ValueError("OPENAI_API_KEY environment variable is missing!")
+    return OpenAIEmbeddings(openai_api_key=api_key)
+    
 persist_directory = "data/chroma_db"
 manual_scrape_dir = "data/manual_scrapes"
 

@@ -1,7 +1,9 @@
 from langchain.vectorstores import Chroma
 from langchain.retrievers.multi_query import MultiQueryRetriever
 from langchain_openai import ChatOpenAI
-from helper_functions.vectorstore import embedding, persist_directory
+from helper_functions.vectorstore import get_embedding, persist_directory
+
+embedding = get_embedding()
 
 # Load the LLM used for multi-query expansion
 llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
