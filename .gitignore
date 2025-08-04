@@ -31,7 +31,6 @@ env/
 *.log
 
 # Misc
-*.sqlite3
 *.db
 
 # PyCharm IDE
